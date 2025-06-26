@@ -8,15 +8,6 @@
     "remarks": "bittorrent"
   },
   {
-    "outboundTag": "direct",
-    "ip": [
-      "geoip:private",
-      "geosite:private"
-    ],
-    "enabled": true,
-    "remarks": "\u041B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F"
-  },
-  {
     "outboundTag": "proxy",
     "ip": [
       "77.239.122.151"
