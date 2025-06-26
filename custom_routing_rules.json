@@ -1,36 +1,58 @@
 [
   {
-    "remarks": "bittorrent",
     "outboundTag": "direct",
     "protocol": [
       "bittorrent"
-    ]
+    ],
+    "enabled": true,
+    "remarks": "bittorrent"
   },
   {
-    "remarks": "Локальные соединения",
     "outboundTag": "direct",
     "ip": [
-      "geoip:private", "geosite:private"
-    ]
+      "geoip:private",
+      "geosite:private"
+    ],
+    "enabled": true,
+    "remarks": "\u041B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0435 \u0441\u043E\u0435\u0434\u0438\u043D\u0435\u043D\u0438\u044F"
   },
   {
-    "remarks": "Основные",
     "outboundTag": "proxy",
+    "ip": [
+      "77.239.122.151"
+    ],
     "domain": [
+      "domain:pixiv.net",
+      "domain:pxi1mg.net",
+      "domain:chatgpt.com",
+      "domain:openai.com",
       "domain:youtube.com",
       "domain:youtu.be",
       "domain:googlevideo.com",
       "domain:gelbooru.com",
+      "domain:donmai.us",
+      "domain:falixnodes.net",
       "domain:discordapp.com",
       "domain:discordapp.net",
       "domain:discord.com",
       "domain:discord.gg",
       "domain:discord.media",
+      "domain:claude.ai",
+      "domain:anthropic.com",
       "domain:jetbrains.com",
+      "domain:pornhub.com",
       "domain:phncdn.com",
       "domain:ggpht.com",
+      "domain:rule34vault.com",
       "domain:archlinux.org",
+      "domain:geekboards.ru",
+      "domain:blinkshot.io",
+      "domain:recraft.ai",
+      "domain:spaceproxy.net",
+      "domain:hitomi.la",
       "domain:ytimg.com",
+      "domain:x.com",
+      "domain:twitter.com",
       "domain:urlebird.com",
       "domain:sankakucomplex.com",
       "domain:mongodb.com",
@@ -40,16 +62,51 @@
       "domain:searchfloor.org",
       "domain:znanija.com",
       "domain:alicdn.com",
+      "domain:hchan.live",
+      "domain:hentaichan.live",
+      "domain:soundcloud.com",
       "domain:clients6.google.com",
       "domain:googleapis.com",
       "domain:dmulloy2.net",
       "domain:javax.xml.xmlconstants",
-      "domain:gstatic.com"
-    ]
+      "domain:gstatic.com",
+      "domain:spotify.com",
+      "domain:reve.art",
+      "domain:fandom.com",
+      "domain:sora.com",
+      "domain:imgschan.xyz",
+      "domain:papermc.io",
+      "domain:wargaming.net",
+      "domain:api.buildcores.com",
+      "domain:withgoogle.com",
+      "domain:spigotmc.org",
+      "domain:labs.google",
+      "domain:patreon.com",
+      "domain:oaistatic.com",
+      "domain:rule34.xxx",
+      "domain:sentry-wotb-current.wgprod.net",
+      "domain:wargaming.net",
+      "domain:wotb.app",
+      "domain:gifyu.com",
+      "domain:nhentai.net",
+      "domain:n26.joinserver.xyz",
+      "domain:ntc.party",
+      "domain:sftp.work"
+    ],
+    "process": [
+      "discord",
+      "Discord",
+      "/opt/discord/Discord",
+      "asts",
+      "wineserver"
+    ],
+    "enabled": true,
+    "remarks": "\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435"
   },
   {
-    "remarks": "Все лишнее пускаем напрямую",
     "port": "0-65535",
-    "outboundTag": "direct"
+    "outboundTag": "direct",
+    "enabled": true,
+    "remarks": "\u0412\u0441\u0435 \u043B\u0438\u0448\u043D\u0435\u0435 \u043F\u0443\u0441\u043A\u0430\u0435\u043C \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E"
   }
 ]
