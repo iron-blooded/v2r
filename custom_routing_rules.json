@@ -1,0 +1,55 @@
+[
+  {
+    "remarks": "bittorrent",
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ]
+  },
+  {
+    "remarks": "Локальные соединения",
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private", "geosite:private"
+    ]
+  },
+  {
+    "remarks": "Основные",
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:youtube.com",
+      "domain:youtu.be",
+      "domain:googlevideo.com",
+      "domain:gelbooru.com",
+      "domain:discordapp.com",
+      "domain:discordapp.net",
+      "domain:discord.com",
+      "domain:discord.gg",
+      "domain:discord.media",
+      "domain:jetbrains.com",
+      "domain:phncdn.com",
+      "domain:ggpht.com",
+      "domain:archlinux.org",
+      "domain:ytimg.com",
+      "domain:urlebird.com",
+      "domain:sankakucomplex.com",
+      "domain:mongodb.com",
+      "domain:mongodb.net",
+      "domain:docker.com",
+      "domain:joinserver.xyz",
+      "domain:searchfloor.org",
+      "domain:znanija.com",
+      "domain:alicdn.com",
+      "domain:clients6.google.com",
+      "domain:googleapis.com",
+      "domain:dmulloy2.net",
+      "domain:javax.xml.xmlconstants",
+      "domain:gstatic.com"
+    ]
+  },
+  {
+    "remarks": "Все лишнее пускаем напрямую",
+    "port": "0-65535",
+    "outboundTag": "direct"
+  }
+]
